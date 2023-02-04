@@ -1,0 +1,112 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+// fonts
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: local('../fonts/Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: local('../fonts/Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Black.eot');
+  src: local('../fonts/Montserrat Black'), local('Montserrat-Black'),
+    url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Black.woff2') format('woff2'),
+    url('../fonts/Montserrat-Black.woff') format('woff'),
+    url('../fonts/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.eot');
+  src: local('../fonts/Montserrat Medium'), local('Montserrat-Medium'),
+    url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-ExtraBold.eot');
+  src: local('../fonts/Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+    url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+    url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.eot');
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Seymour One';
+  src: url('../fonts/SeymourOne.eot');
+  src: local('../fonts/Seymour One'), local('SeymourOne'),
+    url('../fonts/SeymourOne.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SeymourOne.woff') format('woff'),
+    url('../fonts/SeymourOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// styles
+body {
+  cursor: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.047 14.0117L28.9811 24.2169C30.8522 25.9633 29.8177 29.1 27.2748 29.3907L23.1573 29.8612C22.124 29.9793 21.1533 30.4167 20.3802 31.1124L18.0069 33.2484C16.0763 34.9859 13 33.6159 13 31.0186V16.2049C13 13.5817 16.1293 12.2219 18.047 14.0117Z' stroke='%23131313' stroke-width='1'/%3E%3C/svg%3E "),
+    default;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: getColor('main-text-color');
+  background-color: getColor('primary-bg-color');
+  letter-spacing: 0.04em;
+}
+
+button:hover,
+a:hover {
+  cursor: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238AE0A1' stroke-width='1' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E"),
+    default;
+}
+
+button,
+a {
+  cursor: none;
+}
+
+label {
+  cursor: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238AE0A1' stroke-width='1' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E"),
+    default;
+}
